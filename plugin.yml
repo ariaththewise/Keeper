@@ -1,0 +1,16 @@
+name: Keeper
+author: Ariath
+description: Registra la entrada/salida de usuarios al servidor.
+main: ariath.Bukkit.KeeperPlugin.Keeper
+version: 1.0.0
+commands:
+   keeper:
+      description: Consulta de IPs de un jugador.
+      usage: |
+         /<command> <player>: Muestra las ips usadas por este jugador, y si alguien mas las ha usado.
+         /<command> listips [ip]: Lista todas las ips registradas similares a la dada.
+         /<command> listplayers [player]: Lista todos los jugadores registrados similares al indicado.
+         
+permissions:
+   keeper.command:
+      default: op
